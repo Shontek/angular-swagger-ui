@@ -7,8 +7,8 @@ describe('angular-swagger-ui App', () => {
     page = new AngularSwaggerUiPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display swagger title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getSwaggerTitleText()).toEqual('Angular Swagger UI');
   });
 });
